@@ -13,10 +13,18 @@
     }
     #grid{
       display: grid;
-      grid-template-columns: 180px 1fr;
+      grid-template-columns: 180px 180px 1fr;
     }
     #naeyong{
       text-align: center;
+    }
+    #better{
+      border-right: 1px solid gray;
+      width: 120px;
+      padding:20px;
+      margin: 0;
+      padding-left: 28px;
+      padding-right: 165px;
     }
     h1 {
       font-size:40px;
@@ -31,6 +39,20 @@
       padding:20px;
       margin: 0;
       padding-left: 28px;
+    }
+    @media(max-width:680px){
+      #grid{
+        display:block;
+      }
+      ol, ul {
+        border-right:none;
+        border-bottom: 1px solid gray;
+      }
+      #better{
+        border-right:none;
+        border-bottom: 1px solid gray;
+        padding-top: 50px;
+      }
     }
   </style>
 </head>
@@ -54,6 +76,9 @@
     <li><a href="https://www.instagram.com/olgaeng9/"
       target="_blank" title="인스타 링크">이혜원</a></li>
   </ul>
+  <a href="https://www.instagram.com/cflhs_hony_04/"
+   target="_blank" title="무료로 즐기세요!" id="better">
+   <img src="betterthankorean.gif" width="250"></a>
  </div>
  <div id="naeyong">
   <h2>안녕하세요</h2>
@@ -78,6 +103,8 @@
   내가 걔한테 다 지우라고 협박하고<br>
   다시는 나타나지 말라고했었음ㅋㅋ<br></p>
  <p>
+  <a href="https://www.youtube.com/user/woowakgood"
+  target="_blank" title="구독하러가기">
   <img src="wak.jpg" width="120px"></p>
  </p>
  </div>

@@ -3,17 +3,70 @@
 <head>
   <title>장주원 꿈 이야기2</title>
   <meta charset="utf-8">
+  <style>
+    a {
+      color:black;
+     text-decoration: none;
+    }
+    #active {
+      color:red;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 180px 180px 1fr;
+    }
+    #naeyong{
+      text-align: center;
+    }
+    #better{
+      border-right: 1px solid gray;
+      width: 120px;
+      padding:20px;
+      margin: 0;
+      padding-left: 28px;
+      padding-right: 165px;
+    }
+    h1 {
+      font-size:40px;
+      text-align:center;
+      border-bottom:1px solid gray;
+      margin: 0;
+      padding: 20px;
+    }
+    ol, ul {
+      border-right: 1px solid gray;
+      width: 120px;
+      padding:20px;
+      margin: 0;
+      padding-left: 28px;
+    }
+    @media(max-width:680px){
+      #grid{
+        display:block;
+      }
+      ol, ul {
+        border-right:none;
+        border-bottom: 1px solid gray;
+      }
+      #better{
+        border-right:none;
+        border-bottom: 1px solid gray;
+        padding-top: 50px;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">주원이의 꿈 이야기2</a></h1>
-  <h3>꿈 목록</h3>
+ <div id="grid">
   <ol>
+    <h3><div class="mokcha">꿈 목록</div></h3>
     <li><a href="1.html">꿈 1</a></li>
-    <li><a href="2.html">꿈 2</a></li>
+    <li><a href="2.html" id="active">꿈 2</a></li>
     <li><a href="3.html">꿈 3</a></li>
   </ol>
-  <h3>찐따들 목록</h3>
   <ul>
+    <h3><div class="mokcha">찐따들 목록</div></h3>
     <li><a href="https://www.instagram.com/_ju_w_on_/"
       target="_blank" title="인스타 링크">장주원</a></li>
     <li><a href="https://www.instagram.com/high_silverlight/"
@@ -23,19 +76,27 @@
     <li><a href="https://www.instagram.com/olgaeng9/"
       target="_blank" title="인스타 링크">이혜원</a></li>
   </ul>
-
+  <a href="https://www.instagram.com/cflhs_hony_04/"
+   target="_blank" title="무료로 즐기세요!" id="better">
+   <img src="betterthankorean.gif" width="250"></a>
+ </div>
+ <div id="naeyong">
   <h2>안녕하세요</h2>
-  장주원이라고 합니다. <h1><strong><u>반갑습니다</u>.</strong></h1>
-  <h6>썰좀 풀어볼까 합니다</h6>
-청와대 청문회? 같은데 가서 <a href="https://people.search.naver.com/search.naver?where=nexearch&query=%EB%AC%B8%EC%9E%AC%EC%9D%B8&sm=tab_etc&ie=utf8&key=PeopleService&os=98103"
-target="_blank" title="문재인 프로필">문재인</a>이 있었는데<br>
-국군 장교까지 자기가 정하눈걸 보고 옆에서<br>
-문재인 성대모사 하니까 갑자기 지혼자 빡쳐서<br>
-나 때릴려 하다가 보는눈 있고 그래서 그만둠<br>
-<p>
-<a href="https://www.instagram.com/cflhs_hony_04/"><img src="betterthankorean.gif" width="500px"></a>
-</p>
-<br>
+  장주원이라고 합니다. <h2><strong><u>반갑습니다</u>.</strong></h2>
+  <h6>썰좀 풀어보겠습니다.</h6>
+  청와대 청문회? 같은데 가서 <a href="https://people.search.naver.com/search.naver?where=nexearch&query=%EB%AC%B8%EC%9E%AC%EC%9D%B8&sm=tab_etc&ie=utf8&key=PeopleService&os=98103"
+  target="_blank" title="문재인 프로필">문재인</a>이 있었는데<br>
+  국군 장교까지 자기가 정하눈걸 보고 옆에서<br>
+  문재인 성대모사 하니까 갑자기 지혼자 빡쳐서<br>
+  나 때릴려 하다가 보는눈 있고 그래서 그만둠<br>
+ <p>
+  <a href="https://www.instagram.com/no_censorship_jwn/"
+  target="_blank" title="지금 바로 팔로우 하러 가기">
+  <img src="insta.png" width="500px"></p></a>
+ </p>
+ </div>
+ <p>
+ <br>
 <div id="disqus_thread"></div>
 <script>
 
@@ -56,5 +117,5 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  <br>
+</p>
 </body>
