@@ -3,92 +3,31 @@
 <head>
   <title>장주원 꿈 이야기1</title>
   <meta charset="utf-8">
-  <style>
-    a {
-      color:black;
-     text-decoration: none;
-    }
-    #active {
-      color:red;
-    }
-    #grid{
-      display: grid;
-      grid-template-columns: 180px 180px 350px 1fr;
-    }
-    #naeyong{
-      text-align: center;
-    }
-    #better{
-      border-right: 1px solid gray;
-      width: 120px;
-      padding:20px;
-      margin: 0;
-      padding-left: 28px;
-      padding-right: 165px;
-    }
-    #sin{
-      border-right: 1px solid gray;
-      width: 120px;
-      margin: 0;
-      padding-right: 40px;
-      padding-top: 20px;
-    }
-
-    h1 {
-      font-size:40px;
-      text-align:center;
-      border-bottom:1px solid gray;
-      margin: 0;
-      padding: 20px;
-    }
-    ol, ul {
-      border-right: 1px solid gray;
-      width: 120px;
-      padding:20px;
-      margin: 0;
-      padding-left: 28px;
-    }
-    @media(max-width:680px){
-      #grid{
-        display:block;
-      }
-      ol, ul {
-        border-right:none;
-        border-bottom: 1px solid gray;
-      }
-      #better{
-        border-right:none;
-        border-bottom: 1px solid gray;
-        padding-top: 50px;
-      }
-      #sin{
-        border-right:none;
-        border-bottom: 1px solid gray;
-        padding-top: 50px;
-        margin-top: : 10px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1><a href="index.html">주원 갤러리</a></h1>
  <div id="grid">
   <ol>
-    <h3><div class="mokcha">꿈 이야기</div></h3>
+    <h3>꿈 이야기</h3>
     <li><a href="1.html" id="active">꿈 1</a></li>
-    <li><a href="2.html">꿈 2</a></li>
-    <li><a href="3.html">꿈 3</a></li>
+    <li><a href="2.html" class="plz1">꿈 2</a></li>
+    <li><a href="3.html" class="plz2">꿈 3</a></li>
   </ol>
   <ul>
-    <h3><div class="mokcha">찐따들 신상</div></h3>
+    <h3>찐따들 신상</h3>
     <li><a href="https://www.instagram.com/_ju_w_on_/"
-      target="_blank" title="인스타 링크">장주원</a></li>
+      target="_blank" title="인스타 링크" class="plz3">
+      장주원</a></li>
     <li><a href="https://www.instagram.com/high_silverlight/"
-      target="_blank" title="인스타 링크">고은빛</a></li>
-    <li><a href="https://www.instagram.com/seojin_5/"
-      target="_blank" title="인스타 링크">오서진</a></li>
+      target="_blank" title="인스타 링크" class="plz4">
+      고은빛</a></li>
+    <li><a href="https://www.instagram.com/eojin_5/"
+      target="_blank" title="인스타 링크" class="plz5">
+      오서진</a></li>
     <li><a href="https://www.instagram.com/olgaeng9/"
-      target="_blank" title="인스타 링크">이혜원</a></li>
+      target="_blank" title="인스타 링크" class="plz6">
+      이혜원</a></li>
   </ul>
   <a href="https://www.instagram.com/cflhs_hony_04/"
    target="_blank" title="무료로 즐기세요!" id="better">
@@ -96,6 +35,33 @@
   <a href="https://www.instagram.com/h_yong115/"
     target="_blank" title="이 아이가 배부름을 알까요?" id="sin">
     <img src="sin.gif" width="120px"></a>
+
+    <input type="button" value="다크모드" onclick="
+    if(this.value === '다크모드') {
+      var target = document.querySelector('body')
+     target.style.backgroundColor= 'black';
+     target.style.color= 'white';
+     document.querySelector('a').style.color= 'white';
+     document.querySelector('.plz1').style.color= 'white';
+     document.querySelector('.plz2').style.color= 'white';
+     document.querySelector('.plz3').style.color= 'white';
+     document.querySelector('.plz4').style.color= 'white';
+     document.querySelector('.plz5').style.color= 'white';
+     document.querySelector('.plz6').style.color= 'white';
+     this.value= '일반모드';
+   } else {
+     document.querySelector('body').style.backgroundColor= 'white';
+     document.querySelector('body').style.color= 'black';
+     document.querySelector('a').style.color= 'black';
+     document.querySelector('.plz1').style.color= 'black';
+     document.querySelector('.plz2').style.color= 'black';
+     document.querySelector('.plz3').style.color= 'black';
+     document.querySelector('.plz4').style.color= 'black';
+     document.querySelector('.plz5').style.color= 'black';
+     document.querySelector('.plz6').style.color= 'black';
+     this.value= '다크모드';
+   }
+    ">
  </div>
  <div id="naeyong">
   <h2>안녕하세요</h2>
