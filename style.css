@@ -1,64 +1,11 @@
-  a {
-    color:black;
-   text-decoration: none;
-  }
-  #active {
-    color:red;
-  }
-  #grid{
-    display: grid;
-    grid-template-columns: 180px 180px 350px 1fr;
-  }
-  #naeyong{
+  h1 {
+    font-size: 100px;
     text-align: center;
   }
-  #better{
-    border-right: 1px solid gray;
-    width: 120px;
-    padding:20px;
-    margin: 0;
-    padding-left: 28px;
-    padding-right: 165px;
-  }
-  #sin{
-    border-right: 1px solid gray;
-    width: 120px;
-    margin: 0;
-    padding-right: 40px;
-    padding-top: 20px;
+  h3 {
+    text-align: center;
   }
 
-  h1 {
-    font-size:40px;
-    text-align:center;
-    border-bottom:1px solid gray;
-    margin: 0;
-    padding: 20px;
-  }
-  ol, ul {
-    border-right: 1px solid gray;
-    width: 120px;
-    padding:20px;
-    margin: 0;
-    padding-left: 28px;
-  }
-  @media(max-width:680px){
-    #grid{
-      display:block;
-    }
-    ol, ul {
-      border-right:none;
-      border-bottom: 1px solid gray;
-    }
-    #better{
-      border-right:none;
-      border-bottom: 1px solid gray;
-      padding-top: 50px;
-    }
-    #sin{
-      border-right:none;
-      border-bottom: 1px solid gray;
-      padding-top: 50px;
-      margin-top: : 10px;
-    }
+   #insta {
+     text-align: center;
   }
